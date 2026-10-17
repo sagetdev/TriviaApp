@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pressable, View } from 'react-native';
 import { colors } from '../../theme';
-import type { Category } from '../../data/mock';
+import type { Category } from '../data/mock';
 import { Card, IconTile, Text } from '../ui';
 
 interface Props {
