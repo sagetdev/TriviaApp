@@ -2,10 +2,10 @@ import React from 'react';
 import { ScrollView, View } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
-import { colors } from '../../src/theme';
-import { getCategory } from '../../src/data/mock';
-import { formatTime } from '../../src/data/format';
-import { Button, Card, Icon, IconButton, IconName, ScoreRing, Text } from '../../src/components/ui';
+import { colors } from '../../theme';
+import { getCategory } from '../../components/data/mock';
+import { formatTime } from '../../components/data/format';
+import { Button, Card, Icon, IconButton, IconName, ScoreRing, Text } from '../../components/ui';
 
 const message = (ratio: number) => {
   if (ratio >= 0.8) return 'Great job!';
