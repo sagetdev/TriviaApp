@@ -17,7 +17,7 @@ const greeting = () => {
 
 export default function HomeScreen() {
   const router = useRouter();
-  const openCategory = (id: string) => router.push({ pathname: '/quiz/setup', params: { category: id } });
+  const openCategory = (id: string) => router.push({ pathname: '/(quiz)/setup', params: { category: id } });
 
   const rows = [0, 2, 4].map((i) => categories.slice(i, i + 2));
 
