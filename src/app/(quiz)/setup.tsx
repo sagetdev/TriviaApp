@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { ScrollView, View } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
-import { colors } from '../../src/theme';
-import { getCategory } from '../../src/data/mock';
-import { Button, Chip, Icon, IconButton, IconTile, Text } from '../../src/components/ui';
+import { colors } from '../../theme';
+import { getCategory } from '../../components/data/mock';
+import { Button, Chip, Icon, IconButton, IconTile, Text } from '../../components/ui';
 
 const difficulties = [
   { id: 'easy', label: 'Easy', xp: 8 },
