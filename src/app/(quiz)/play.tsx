@@ -2,12 +2,12 @@ import React, { useCallback, useMemo, useRef, useState } from 'react';
 import { ScrollView, Text as RNText, View } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
-import { colors, fonts } from '../../src/theme';
-import { getCategory, getQuestions } from '../../src/data/mock';
-import { formatTime } from '../../src/data/format';
-import { useCountdown } from '../../src/hooks/useCountdown';
-import { Button, CategoryTag, OptionCard, OptionState, ProgressBar } from '../../src/components/ui';
-import { FeedbackSheet, QuizTopBar, Verdict } from '../../src/components/features';
+import { colors, fonts } from '../../theme';
+import { getCategory, getQuestions } from '../../components/data/mock';
+import { formatTime } from '../../components/data/format';
+import { useCountdown } from '../../hooks/useCountdown';
+import { Button, CategoryTag, OptionCard, OptionState, ProgressBar } from '../../components/ui';
+import { FeedbackSheet, QuizTopBar, Verdict } from '../../components/features';
 
 const LETTERS = ['A', 'B', 'C', 'D'];
 const LIFELINES = 2;
@@ -67,7 +67,7 @@ export default function QuizPlayScreen() {
   const next = () => {
     if (isLast) {
       router.replace({
-        pathname: '/quiz/results',
+        pathname: '/(quiz)/results',
         params: {
           category: category.id,
           score: String(correctCount.current),

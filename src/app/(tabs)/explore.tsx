@@ -90,7 +90,7 @@ export default function ExploreScreen() {
                 variant="large"
                 onPress={() =>
                   router.push({
-                    pathname: "/quiz/setup",
+                    pathname: "/(quiz)/setup",
                     params: { category: c.id },
                   })
                 }

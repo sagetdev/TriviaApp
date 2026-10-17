@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "RoamApp",
-    "slug": "RoamApp",
+    "name": "TriviaApp",
+    "slug": "trivia-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "roamapp",
+    "scheme": "triviaapp",
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon"

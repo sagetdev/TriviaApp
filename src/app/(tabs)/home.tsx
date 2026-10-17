@@ -1,12 +1,12 @@
 import React from 'react';
 import { View } from 'react-native';
 import { useRouter } from 'expo-router';
-import { colors } from '../../src/theme';
-import { categories, user } from '../../src/data/mock';
-import { formatNumber } from '../../src/data/format';
-import { Screen } from '../../src/components/Screen';
-import { Avatar, IconButton, SectionHeader, Text } from '../../src/components/ui';
-import { CategoryCard, DailyChallengeCard, StatCard } from '../../src/components/features';
+import { colors } from '../../theme';
+import { categories, user } from '../../components/data/mock';
+import { formatNumber } from '../../components/data/format';
+import { Screen } from '../../components/Screen';
+import { Avatar, IconButton, SectionHeader, Text } from '../../components/ui';
+import { CategoryCard, DailyChallengeCard, StatCard } from '../../components/features';
 
 const greeting = () => {
   const h = new Date().getHours();
@@ -17,7 +17,7 @@ const greeting = () => {
 
 export default function HomeScreen() {
   const router = useRouter();
-  const openCategory = (id: string) => router.push({ pathname: '/quiz/setup', params: { category: id } });
+  const openCategory = (id: string) => router.push({ pathname: '/(quiz)/setup', params: { category: id } });
 
   const rows = [0, 2, 4].map((i) => categories.slice(i, i + 2));
 

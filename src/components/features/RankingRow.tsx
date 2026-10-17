@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { colors } from '../../theme';
-import type { Player } from '../../data/mock';
+import type { Player } from '../data/mock';
 import { formatNumber } from '../../data/format';
 import { Avatar, Text } from '../ui';
 

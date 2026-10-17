@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { colors } from '../../theme';
-import type { Achievement } from '../../data/mock';
+import type { Achievement } from '../data/mock';
 import { IconTile, Text } from '../ui';
 
 export function AchievementBadge({ item }: { item: Achievement }) {

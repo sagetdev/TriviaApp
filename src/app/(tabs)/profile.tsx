@@ -1,10 +1,10 @@
 import React from 'react';
 import { Pressable, View } from 'react-native';
 import { useRouter } from 'expo-router';
-import { colors } from '../../src/theme';
-import { achievements, user } from '../../src/data/mock';
-import { formatNumber } from '../../src/data/format';
-import { Screen } from '../../src/components/Screen';
+import { colors } from '../../theme';
+import { achievements, user } from '../../components/data/mock';
+import { formatNumber } from '../../components/data/format';
+import { Screen } from '../../components/Screen';
 import {
   Avatar,
   Card,
@@ -14,8 +14,8 @@ import {
   ProgressBar,
   SectionHeader,
   Text,
-} from '../../src/components/ui';
-import { AchievementBadge } from '../../src/components/features';
+} from '../../components/ui';
+import { AchievementBadge } from '../../components/features';
 
 const stats = [
   { value: String(user.quizzes), label: 'Quizzes' },
