@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { View } from 'react-native';
 import { useRouter } from 'expo-router';
-import { colors } from '../src/theme';
-import { Screen } from '../src/components/Screen';
-import { Button, IconButton, Text } from '../src/components/ui';
-import { SettingsRow, SettingsSection } from '../src/components/features';
+import { colors } from '../theme';
+import { Screen } from '../components/Screen';
+import { Button, IconButton, Text } from '../components/ui';
+import { SettingsRow, SettingsSection } from '../components/features';
 
 export default function SettingsScreen() {
   const router = useRouter();
