@@ -10,7 +10,7 @@ import {
   Inter_600SemiBold,
   Inter_700Bold,
 } from '@expo-google-fonts/inter';
-import { colors } from '../src/theme';
+import { colors } from '../theme';
 
 SplashScreen.preventAutoHideAsync();
 
