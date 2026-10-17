@@ -47,7 +47,7 @@ export default function QuizSetupScreen() {
 
   const start = () =>
     router.push({
-      pathname: '/quiz/play',
+      pathname: '/(quiz)/play',
       params: { category: category.id, difficulty, count: String(count), time },
     });
 
