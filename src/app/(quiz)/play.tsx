@@ -67,7 +67,7 @@ export default function QuizPlayScreen() {
   const next = () => {
     if (isLast) {
       router.replace({
-        pathname: '/quiz/results',
+        pathname: '/(quiz)/results',
         params: {
           category: category.id,
           score: String(correctCount.current),
