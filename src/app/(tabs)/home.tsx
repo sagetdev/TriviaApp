@@ -1,12 +1,12 @@
 import React from 'react';
 import { View } from 'react-native';
 import { useRouter } from 'expo-router';
-import { colors } from '../../src/theme';
-import { categories, user } from '../../src/data/mock';
-import { formatNumber } from '../../src/data/format';
-import { Screen } from '../../src/components/Screen';
-import { Avatar, IconButton, SectionHeader, Text } from '../../src/components/ui';
-import { CategoryCard, DailyChallengeCard, StatCard } from '../../src/components/features';
+import { colors } from '../../theme';
+import { categories, user } from '../../components/data/mock';
+import { formatNumber } from '../../components/data/format';
+import { Screen } from '../../components/Screen';
+import { Avatar, IconButton, SectionHeader, Text } from '../../components/ui';
+import { CategoryCard, DailyChallengeCard, StatCard } from '../../components/features';
 
 const greeting = () => {
   const h = new Date().getHours();
